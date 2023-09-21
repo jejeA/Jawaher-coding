@@ -1,0 +1,62 @@
+import java.util.*;
+public class NumberToWord {
+    
+    public static void main(String[] args) {
+       
+       System.out.print("\t please entre the number:");
+       Scanner sc=new Scanner(System.in);
+       int number =sc.nextInt(); 
+       
+        
+        nestedif(number);
+        switchcase(number);
+    }
+    private static void nestedif(int number)
+    {
+        String numtoStr = null;
+        if (0 == number) {
+            numtoStr = "zero";
+        } else if (1 == number) {
+            numtoStr = "one";
+        } else if (2 == number) {
+            numtoStr = "two";
+        } else if (3 == number) {
+            numtoStr = "three";
+        } else if (4 == number) {
+            numtoStr = "four";
+        } else if (5 == number) {
+            numtoStr = "five";
+        } else if (6 == number) {
+            numtoStr = "sex";
+        } else if (7 == number) {
+            numtoStr = "seven";
+        } else if (8 == number) {
+            numtoStr = "eight";
+        } else if (9 == number) {
+            numtoStr = "nine";
+        } else {
+            numtoStr = "other";
+        }
+        System.out.println("The way of nested-if: " + numtoStr);
+    }
+private static void switchcase(int number)
+    {
+        String numStr = null;
+        switch (number) {
+            case 0:  numStr = "zero";  break;
+            case 1:  numStr = "one";   break;
+            case 2:  numStr = "two";   break;
+            case 3:  numStr = "three"; break;
+            case 4:  numStr = "four";  break;
+            case 5:  numStr = "five";  break;
+            case 6:  numStr = "sex";   break;
+            case 7:  numStr = "seven"; break;
+            case 8:  numStr = "eight"; break;
+            case 9:  numStr = "nine";  break;
+            default: numStr = "other"; break;
+        }
+        System.out.println(" The way of switch-case" + numStr);
+    }
+  
+    
+}
