@@ -1,0 +1,17 @@
+import java.util.*;
+
+
+public class check { 
+   public static void main(String[] args) {  
+      
+      Scanner sr=new Scanner(System.in);
+      System.out.println("please enter the number ");
+      int num =sr.nextInt();       
+   
+      if (num % 2==0 ) {
+         System.out.println("\t The number is even : "+num );
+      } else {
+         System.out.println( "\t The number is odd  : "+num );  
+      }
+   }
+}
