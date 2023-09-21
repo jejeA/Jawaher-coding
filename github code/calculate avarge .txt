@@ -1,0 +1,25 @@
+import java.util.Scanner;  
+public class calculateavg   
+{  
+public static void main(String[] args)   
+{  
+
+double n;  
+int sum=0;
+double avg;
+Scanner sc=new Scanner(System.in);  
+
+System.out.print("How many number you want to store ?: ");  
+n=sc.nextInt();  
+
+int[] array = new int[20];  
+System.out.println("Enter the elements of the array: ");  
+
+for(int i=0; i<n; i++)  {  
+array[i]=sc.nextInt(); 
+sum=sum+array[i];
+} System.out.println("the sum of elements is " + sum);
+avg=sum/n;
+System.out.println("the avg of elements is " + avg);
+}  
+} 
